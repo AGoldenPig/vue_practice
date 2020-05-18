@@ -1,20 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Book from '../views/Book.vue'
-import Home from '../views/Home.vue'
+import HomeRouter from '../router/Home'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/book',
     name:'book',
     component: Book
-  },{
-    path: '/home',
-    name: 'home',
-    component: Home
-  }
+  },
+  HomeRouter
 ]
 
 export default new VueRouter({
